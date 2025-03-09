@@ -15,13 +15,7 @@ class CreateImageUseCase extends BaseUsecase
   void onInit() {
     super.onInit();
 
-    // _imageRepository = Get.find<ImageRepository>();
-
-    try {
-      _imageRepository = Get.find<ImageRepository>();
-    } catch (e, stacktrace) {
-      LogUtil.error("$e");
-    }
+    _imageRepository = Get.find<ImageRepository>();
   }
 
   @override
